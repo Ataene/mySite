@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./Components/About";
+import Carosal from "./Components/Carosal";
 import Contacts from "./Components/Contacts";
 import Customers from "./Components/Customers";
 import Experience from "./Components/Experience";
@@ -25,7 +26,8 @@ function App() {
         <Services />
         <Flowing />
         <Contacts />
-        <Map />
+        {/* <Map /> */}
+        <Carosal />
         <Footer />
     </>
   );

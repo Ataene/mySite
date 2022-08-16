@@ -1,55 +1,243 @@
-import React from "react";
-import Avatar from "@mui/material/Avatar";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Unstable_Grid2";
-import mapImage from "../images/worldMap.png";
-import mapImage1 from "../images/usa.jpg";
-import mapImage2 from "../images/asia.jpg";
-import mapImage3 from "../images/africa.jpg";
-import mapImage4 from "../images/south.jpg";
-import mapImage5 from "../images/aus.jpg";
-import { Typography } from "@mui/material";
+// import React from "react";
+// import Avatar from "@mui/material/Avatar";
+// import Grid from "@mui/material/Unstable_Grid2";
+// import mapImage from "../images/ReDesign.PNG";
+// import mapImage1 from "../images/usa.jpg";
+// import mapImage2 from "../images/asia.jpg";
+// import mapImage3 from "../images/africa.jpg";
+// import mapImage4 from "../images/south.jpg";
+// import mapImage5 from "../images/aus.jpg";
+// import { Typography, Container } from "@mui/material";
+// import { styled } from '@mui/material/styles';
 
-const Map = () => {
-  const mapStyle = {
-    backgroundImage: `url(${mapImage})`,
-    backgroundSize: "cover",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "800px",
-    width: "80rem",
-  };
-  return (
-    <>
-    <Typography variant="h5" sx={{display: "flex", justifyContent: "center", marginTop: 5, marginBottom: 1}}>Our Global Customer</Typography>
-    <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", alignItems: "center"}}  >
-      <Grid container spacing={2} minHeight={160} style={mapStyle}>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
-          {/* <Avatar src={mapImage1} /> */}
-        </Grid>
-        <Grid display="flex" justifyContent="center" alignItems="center">
-          <Avatar src={mapImage1} />
-        </Grid>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
-          <Avatar src={mapImage4} sx={{marginRight: "45px", marginTop:"300px"}} />
-          {/* <Typography sx={{marginRight: "60px", marginTop:"300px", color: "greenyellow"}}>Gloria</Typography> */}
-        </Grid>
+// import { useTheme } from '@mui/material/styles';
+// import Box from '@mui/material/Box';
+// import MobileStepper from '@mui/material/MobileStepper';
+// import Paper from '@mui/material/Paper';
+// import Button from '@mui/material/Button';
+// import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
+// import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+// import SwipeableViews from 'react-swipeable-views';
+// import { autoPlay } from 'react-swipeable-views-utils';
+
+// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+// const Map = () => {
+
+//   const images = [
+//     {
+//       label: 'San Francisco – Oakland Bay Bridge, United States',
+//       imgPath:
+//         'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+//     },
+//     {
+//       label: 'Bird',
+//       imgPath:
+//         'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+//     },
+//     {
+//       label: 'Bali, Indonesia',
+//       imgPath:
+//         'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+//     },
+//     {
+//       label: 'Goč, Serbia',
+//       imgPath:
+//         'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+//     },
+//   ];
+  
+
+//   const theme = useTheme();
+//   const [activeStep, setActiveStep] = React.useState(0);
+//   const maxSteps = images.length;
+
+//   const handleNext = () => {
+//     setActiveStep((prevActiveStep) => prevActiveStep + 1);
+//   };
+
+//   const handleBack = () => {
+//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
+//   };
+
+//   const handleStepChange = (step) => {
+//     setActiveStep(step);
+//   };
 
 
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
-          <Avatar src={mapImage3} sx={{marginRight: "45px", marginTop:"300px"}}  />
-        </Grid>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
-          <Avatar src={mapImage2} sx={{marginRight: "130px"}} />
-        </Grid>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
-          <Avatar src={mapImage5} sx={{marginRight: "300px", marginTop:"500px"}} />
-        </Grid>
-      </Grid>
-    </Box>
-    </>
-  );
-};
 
-export default Map;
+//   return (
+//     <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+//       <Paper
+//         square
+//         elevation={0}
+//         sx={{
+//           display: 'flex',
+//           alignItems: 'center',
+//           height: 50,
+//           pl: 2,
+//           bgcolor: 'background.default',
+//         }}
+//       >
+//         <Typography>{images[activeStep].label}</Typography>
+//       </Paper>
+//       <AutoPlaySwipeableViews
+//         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+//         index={activeStep}
+//         onChangeIndex={handleStepChange}
+//         enableMouseEvents
+//       >
+//         {images.map((step, index) => (
+//           <div key={step.label}>
+//             {Math.abs(activeStep - index) <= 2 ? (
+//               <Box
+//                 component="img"
+//                 sx={{
+//                   height: 255,
+//                   display: 'block',
+//                   maxWidth: 400,
+//                   overflow: 'hidden',
+//                   width: '100%',
+//                 }}
+//                 src={step.imgPath}
+//                 alt={step.label}
+//               />
+//             ) : null}
+//           </div>
+//         ))}
+//       </AutoPlaySwipeableViews>
+//       <MobileStepper
+//         steps={maxSteps}
+//         position="static"
+//         activeStep={activeStep}
+//         nextButton={
+//           <Button
+//             size="small"
+//             onClick={handleNext}
+//             disabled={activeStep === maxSteps - 1}
+//           >
+//             Next
+//             {theme.direction === 'rtl' ? (
+//               <KeyboardArrowLeft />
+//             ) : (
+//               <KeyboardArrowRight />
+//             )}
+//           </Button>
+//         }
+//         backButton={
+//           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+//             {theme.direction === 'rtl' ? (
+//               <KeyboardArrowRight />
+//             ) : (
+//               <KeyboardArrowLeft />
+//             )}
+//             Back
+//           </Button>
+//         }
+//       />
+//     </Box>
+//   );
+
+
+//   // const Item = styled(Box)(({ theme }) => ({
+//   //   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+//   //   ...theme.typography.body2,
+//   //   padding: theme.spacing(1),
+//   //   textAlign: 'center',
+//   //   color: theme.palette.text.secondary,
+//   // }));
+
+
+//   // return (
+//   //   <>
+//   //     <Grid sx={{ flexGrow: 1 }}>
+//   //       <Grid spacing={1}>
+//   //         <Grid item xs={12} md={12} lg={12}>
+//   //           <Item>
+//   //             <Typography
+//   //               variant="h5"
+//   //               sx={{
+//   //                 display: "flex",
+//   //                 justifyContent: "center",
+//   //                 marginTop: 5,
+//   //                 marginBottom: 1,
+//   //               }}
+//   //             >
+//   //               Our Global Customer
+//   //             </Typography>
+//   //             <Box
+//   //               sx={{
+//   //                 flexGrow: 1,
+//   //                 display: "flex",
+//   //                 justifyContent: "center",
+//   //               }}
+//   //             >
+//   //               <Grid spacing={2} minHeight={160} style={mapStyle}>
+//   //                 <Grid
+//   //                   xs
+//   //                   display="flex"
+//   //                   justifyContent="center"
+//   //                   alignItems="center"
+//   //                 >
+//   //                   {/* <Avatar src={mapImage1} /> */}
+//   //                 </Grid>
+//   //                 <Grid
+//   //                   display="flex"
+//   //                   justifyContent="center"
+//   //                   alignItems="center"
+//   //                 >
+//   //                   <Avatar src={mapImage1} />
+//   //                 </Grid>
+//   //                 <Grid
+//   //                   xs
+//   //                   display="flex"
+//   //                   justifyContent="center"
+//   //                   alignItems="center"
+//   //                 >
+//   //                   <Avatar
+//   //                     src={mapImage4}
+//   //                     sx={{ marginRight: "45px", marginTop: "300px" }}
+//   //                   />
+//   //                   {/* <Typography sx={{marginRight: "60px", marginTop:"300px", color: "greenyellow"}}>Gloria</Typography> */}
+//   //                 </Grid>
+//   //                 <Grid
+//   //                   xs
+//   //                   display="flex"
+//   //                   justifyContent="center"
+//   //                   alignItems="center"
+//   //                 >
+//   //                   <Avatar
+//   //                     src={mapImage3}
+//   //                     sx={{ marginRight: "45px", marginTop: "300px" }}
+//   //                   />
+//   //                 </Grid>
+//   //                 <Grid
+//   //                   xs
+//   //                   display="flex"
+//   //                   justifyContent="center"
+//   //                   alignItems="center"
+//   //                 >
+//   //                   <Avatar src={mapImage2} sx={{ marginRight: "130px" }} />
+//   //                 </Grid>
+//   //                 <Grid
+//   //                   xs
+//   //                   display="flex"
+//   //                   justifyContent="center"
+//   //                   alignItems="center"
+//   //                 >
+//   //                   <Avatar
+//   //                     src={mapImage5}
+//   //                     sx={{ marginRight: "300px", marginTop: "500px" }}
+//   //                   />
+//   //                 </Grid>
+//   //               </Grid>
+//   //             </Box>
+//   //           </Item>
+//   //         </Grid>
+//   //       </Grid>
+//   //     </Grid>
+//   //   </>
+//   // );
+// };
+
+// export default Map;
