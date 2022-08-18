@@ -17,7 +17,7 @@ import "aos/dist/aos.css";
 const Projects = () => {
   return (
     <>
-      <Container>
+      <Container id='Projects'>
         <Typography
           sx={{ display: "flex", justifyContent: "center", marginTop: "15px", color: "green" }}
           data-aos="fade-left"

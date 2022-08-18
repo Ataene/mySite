@@ -14,10 +14,8 @@ import { styled } from "@mui/material/styles";
 import MapsHomeWorkIcon from "@mui/icons-material/MapsHomeWork";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
-import { doc, collection, serverTimestamp, getDoc, addDoc } from "firebase/firestore"; 
+import { collection, serverTimestamp, addDoc } from "firebase/firestore"; 
 import { FirebaseContext } from "./auth/FireabaseProvider";
-// import db from "./auth/FireabaseProvider"
-// import { getFirestore } from 'firebase/firestore'
 
 const Contacts = () => {
   const Item = styled(Box)(({ theme }) => ({
@@ -60,7 +58,7 @@ const Contacts = () => {
 
   return (
     <>
-      <Container sx={{ flexGrow: 1 }}>
+      <Container sx={{ flexGrow: 1 }} id='Contacts'>
         <Typography variant="h3" sx={{display: "flex", justifyContent: "center", color: "green"}} >Contact Us</Typography>
         <Grid container spacing={1}>
           <Grid item xs={12} md={4} lg={4}>

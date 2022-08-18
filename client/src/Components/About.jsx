@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <>
-      <Container sx={{ flexGrow: 1, marginTop: 8 }}>
+      <Container sx={{ flexGrow: 1, marginTop: 8 }} id='About'>
         <Grid container spacing={1}>
           <Grid item xs={12} md={6} lg={6}>
             <Item>

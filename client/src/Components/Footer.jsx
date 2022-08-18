@@ -8,7 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Footer() {
   return (
     <>
-      <Grid
+      <Grid id='Footer'
         sx={{
           backgroundImage: "linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)",
           marginTop: 5,
