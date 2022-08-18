@@ -9,8 +9,8 @@ import { Grid } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import mapImage1 from "../images/Chris.jpg";
 import mapImage2 from "../images/John.jpg";
-import mapImage3 from "../images/John.jpg";
-import mapImage4 from "../images/John.jpg";
+import mapImage3 from "../images/kate.jpg";
+import mapImage4 from "../images/Paul.jpg";
 
 const Carosal = () => {
   const Item = styled("Box")(({ theme }) => ({
@@ -32,12 +32,12 @@ const Carosal = () => {
       image: `${mapImage2}`,
     },
     {
-      name: "Chris",
+      name: "Kate",
       description: "I can't say the least, great time",
       image: `${mapImage3}`,
     },
     {
-      name: "Kate",
+      name: "Chris",
       description: "Patience and collaborative",
       image: `${mapImage4}`,
     },
@@ -49,10 +49,10 @@ const Carosal = () => {
           <Item>
             <Carousel
               next={(next, active) =>
-                console.log(`we left ${active}, and are now at ${next}`)
+                (` ${active}${next}`)
               }
               prev={(prev, active) =>
-                console.log(`we left ${active}, and are now at ${prev}`)
+                (`${active} ${prev}`)
               }
             >
               {items.map((item, i) => (

@@ -1,4 +1,5 @@
 import React from "react";
+import FirebaseProvider from "./Components/auth/FireabaseProvider";
 import About from "./Components/About";
 import Carosal from "./Components/Carosal";
 import Contacts from "./Components/Contacts";
@@ -16,7 +17,8 @@ import Technology from "./Components/Technology";
 function App() {
   return (
     <>
-      <Navigations />
+      <FirebaseProvider>
+        <Navigations />
         <About />
         <Customers />
         <Projects />
@@ -29,6 +31,7 @@ function App() {
         {/* <Map /> */}
         <Carosal />
         <Footer />
+      </FirebaseProvider>
     </>
   );
 }
