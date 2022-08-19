@@ -11,15 +11,15 @@ export const projectList = [
     id: 2,
     img: "images/Citizen.PNG",
     title: "Citizen to City",
-    description: "Calgary Citizen report incident at a park or recreation center to the city staff",
-    url: "https://hundie.firebase.com",
+    description: "Calgary Citizen report incident at a park or recreation center to the city staff.",
+    url: "https://github.com/Zia20/GroupProject",
     github: "https://github.com/Zia20/GroupProject"
 },
 {
     id: 3,
-    img: "images/john.jpg",
+    img: "images/printing.jpg",
     title: "Printing Press",
-    description: "Design all kinds of digital products, like flyers, poster, ID cards, and more offered",
+    description: "Design all kinds of digital products, like flyers, poster, ID cards, and more.",
     url: "https://atmatdesigns.netlify.app/",
     github: "https://github.com/Ataene/Atmat" 
 },
@@ -27,16 +27,16 @@ export const projectList = [
     id: 4,
     img: "images/eCommerce.jpg",
     title: "Ecommerce for good",
-    description: "Build a simple ecommerce page, to showcase products used in any ecommerce",
+    description: "Build a simple ecommerce page, to showcase products used in any ecommerce.",
     url: "https://greatspirationse.netlify.app/",
     github: "https://github.com/Ataene/eCommerce-site"
 
 },
 {
     id: 5,
-    img: "images/weather.jpg",
+    img: "images/Weather.jpg",
     title: "Javascript toggle",
-    description: "Toggle between products, and change screens on a regular basis. It also display",
+    description: "Toggle between products, and change screens on a regular basis. It also display.",
     url: "https://github.com/Ataene/AnimationToggle",
     github: "https://github.com/Ataene/AnimationToggle"
 },
