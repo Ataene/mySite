@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Container } from "@mui/system";
 import mapImage1 from "../images/Chris.jpg";
 import mapImage2 from "../images/John.jpg";
 import mapImage3 from "../images/kate.jpg";

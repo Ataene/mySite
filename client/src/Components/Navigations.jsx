@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Link,
-  animateScroll as scroll,
 } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -19,7 +18,12 @@ import Button from "@mui/material/Button";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Projects", "Portfolio"];
+const navItems = [
+  {Home: "Home", 
+  About: "About", 
+  Project: "Projects",
+}
+];
 
 export default function DrawerAppBar(props) {
   const { window } = props;
@@ -36,9 +40,15 @@ export default function DrawerAppBar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item} disablePadding sx={{display: "flex", flexDirection: "column"}}>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.Home} />
+            </ListItemButton>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText primary={item.About} />
+            </ListItemButton>
+            <ListItemButton sx={{ textAlign: "center" }} to="#project">
+              <ListItemText primary={item.Project} />
             </ListItemButton>
           </ListItem>
         ))}

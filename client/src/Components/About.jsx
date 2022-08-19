@@ -28,6 +28,7 @@ const About = () => {
                 style={{ borderRadius: 20 }}
                 placeholder="Emmanuel"
                 data-aos="fade-right"
+                alt="Emmanuel"
               />
             </Item>
           </Grid>

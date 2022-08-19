@@ -8,7 +8,6 @@ import image1 from "../images/reactNative.png";
 import image2 from "../images/mongoDb.png";
 import image3 from "../images/aws.png";
 import image4 from "../images/ml.png";
-import image5 from "../images/reactIcons.png";
 import image6 from "../images/node.png";
 import image7 from "../images/expressJs.png";
 import image8 from "../images/firebase.png";
@@ -47,7 +46,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-down">
               <Box component="ul" aria-labelledby="category-a" sx={{ pl: 1 }}>
-                <img src={image1} height="80px" />
+                <img src={image1} height="80px" alt="React" />
               </Box>
               <Box
                 id="category-a"
@@ -60,7 +59,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-down">
               <Box component="ul" aria-labelledby="category-b" sx={{ pl: 1 }}>
-                <img src={image2} height="80px" />
+                <img src={image2} height="80px" alt="MongoDB" />
               </Box>
               <Box
                 id="category-b"
@@ -73,7 +72,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-down">
               <Box component="ul" aria-labelledby="category-c" sx={{ pl: 2 }}>
-                <img src={image6} height="80px" />
+                <img src={image6} height="80px" alt="Node" />
               </Box>
               <Box
                 id="category-c"
@@ -86,7 +85,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-down">
               <Box component="ul" aria-labelledby="category-d" sx={{ pl: 2 }}>
-                <img src={image3} height="80px" />
+                <img src={image3} height="80px" alt="AWS"/>
               </Box>
               <Box
                 id="category-d"
@@ -99,7 +98,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-up">
               <Box component="ul" aria-labelledby="category-d" sx={{ pl: 2 }}>
-                <img src={image4} height="80px" />
+                <img src={image4} height="80px" alt="ML" />
               </Box>
               <Box
                 id="category-d"
@@ -112,7 +111,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-up">
               <Box component="ul" aria-labelledby="category-d" sx={{ pl: 2 }}>
-                <img src={image1} height="80px" />
+                <img src={image1} height="80px" alt="React Native"/>
               </Box>
               <Box
                 id="category-d"
@@ -125,7 +124,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-up">
               <Box component="ul" aria-labelledby="category-d" sx={{ pl: 1 }}>
-                <img src={image7} height="80px" />
+                <img src={image7} height="80px" alt="Express"/>
               </Box>
               <Box
                 id="category-d"
@@ -138,7 +137,7 @@ const Technology = () => {
           <Grid xs={6} lg={3}>
             <Item data-aos="fade-up">
               <Box component="ul" aria-labelledby="category-d" sx={{ pl: 2 }}>
-                <img src={image8} height="80px" />
+                <img src={image8} height="80px" alt="Firebase"/>
               </Box>
               <Box
                 id="category-d"

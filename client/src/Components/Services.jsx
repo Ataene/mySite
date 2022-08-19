@@ -37,7 +37,7 @@ const Services = () => {
         <Grid xs={6}>
           <Item data-aos="fade-down">
             <Box component="ul" aria-labelledby="category-a" sx={{ pl: 1 }}>
-              <img src={image1} height="80px" />
+              <img src={image1} height="80px" alt="services" />
             </Box>
             <Box
               id="category-a"
@@ -50,7 +50,7 @@ const Services = () => {
         <Grid xs={6}>
           <Item data-aos="fade-down">
             <Box component="ul" aria-labelledby="category-a" sx={{ pl: 1 }}>
-              <img src={image2} height="80px" />
+              <img src={image2} height="80px" alt="services" />
             </Box>
             <Box
               id="category-a"
@@ -63,7 +63,7 @@ const Services = () => {
         <Grid xs={6}>
           <Item data-aos="fade-down">
             <Box component="ul" aria-labelledby="category-a" sx={{ pl: 1 }}>
-              <img src={image3} height="80px" />
+              <img src={image3} height="80px" alt="services" />
             </Box>
             <Box
               id="category-a"
@@ -76,13 +76,13 @@ const Services = () => {
         <Grid xs={6}>
           <Item data-aos="fade-down">
             <Box component="ul" aria-labelledby="category-a" sx={{ pl: 1 }}>
-              <img src={image4} height="80px" />
+              <img src={image4} height="80px" alt="services" />
             </Box>
             <Box
               id="category-a"
               sx={{ fontSize: "12px", textTransform: "uppercase" }}
             >
-              <Typography variant="h5">Data Consulting</Typography>
+              <Typography variant="h5">Machine Learning</Typography>
             </Box>
           </Item>
         </Grid>
