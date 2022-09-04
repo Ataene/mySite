@@ -27,7 +27,6 @@ function App() {
         <Services />
         <Flowing />
         <Contacts />
-        {/* <Map /> */}
         <Carosal />
         <Footer />
       </FirebaseProvider>
