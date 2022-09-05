@@ -35,4 +35,4 @@ const FirebaseProvider = (props) => {
   )
 }
 
-export default FirebaseProvider;
+export default FirebaseProviders
