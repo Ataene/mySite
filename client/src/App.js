@@ -12,6 +12,7 @@ import Navigations from "./Components/Navigations";
 import Projects from "./Components/Projects";
 import Services from "./Components/Services";
 import Technology from "./Components/Technology";
+import Line from "./Components/Line";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Experience />
         <Services />
         <Flowing />
+        <Line />
         <Contacts />
         <Carosal />
         <Footer />
